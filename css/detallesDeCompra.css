@@ -1,0 +1,103 @@
+body{
+    background-color: #e8e5f6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.logo{
+   margin: 10px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #545bb2;
+    border: solid 4px #969afc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 40px;
+    width: 910px;
+}
+h1{
+    font-weight: 600;
+    font-family: "Montserrat", serif;
+    color: #c6d6ff;
+    font-weight: 500;
+}
+.main{
+    background-color: #545bb2;
+    margin-top: 40px;
+    border: solid 4px #969afc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 900px;
+}
+.detalles1{
+    margin-bottom: 30px;
+}
+.detalles2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-family: "Montserrat", serif;
+    color: #e8e5f6;
+    font-weight: 200;
+    margin-top: 10px;
+}
+.registro{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.input1{
+    width: 400px;
+    background-color: #e8e5f6;
+    border: 5px groove #969afc;
+}
+label{
+    font-family: "Montserrat", serif;
+    color: white;
+    width: 400;
+    font-weight: 200;
+}
+.contenedor{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.navegador{
+    background-color: #545bb2;
+    margin-top: 40px;
+    border: solid 4px #969afc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-family: "Montserrat", serif;
+    color: white;
+    font-weight: 600;
+}
+button{
+    background-color: #e8e5f6;
+    border: none;
+    border-radius: 3px;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    padding: 4px;
+}
+.footer{
+    background-color: #545bb2;
+    margin-top: 85px;
+    padding: 10px;
+    font-family: "Montserrat", serif;
+    color: #969afc;
+    font-weight: 300;
+    display: flex;
+    align-self: stretch;
+}

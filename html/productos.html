@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/productos.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h2>VEHICULOS</h2>
+        <img class="logo" src="../img/logo2.png" alt="imagen logo">
+    </header>
+    <nav class="navegador">
+        <div class="filtros">
+            <select class="select1" id="filtroGama">
+                <option value="cero">Filtrar por gama</option>
+                <option value="Baja">Baja</option>
+                <option value="Media">Media</option>
+                <option value="Media-Alta">Media-Alta</option>
+                <option value="Alta">Alta</option>
+            </select>
+            <select class="select2" id="precio">
+                <option value="cero">Filtrar por precio</option>
+                <option value="uno">$150000 - $200000</option>
+                <option value="dos">$220000 - $450.000</option>
+                <option value="tres">$500.000 - $1'000.000</option>
+                <option value="cuatro">$1'500.000 - $2'000.000</option>
+            </select>
+            <button class="btnFiltro" id="filtrar">Filtrar</button>
+            <button class="btnFiltro" id="limpiarFiltro">Limpiar</button>
+        </div>
+        <div class="compra">
+            <a class="linkCompra1" href="../html/carrito.html">Completar compra</a>
+            <a class="linkCompra2" href="../html/detallesDeCompra.html">Cancelar compra</a>
+        </div>
+    </nav>
+    <main class="principal">
+        <section class="catalogo"></section>
+        <aside class="oculto">
+            <article class="detalle-vehiculo">
+                <img id="imagenG" alt="">
+                <p id="nombreVG"></p>
+                <p id="disponibilidad"></p>
+                <p id="gama"></p>
+                <p id="capacidad"></p>
+                <p id="motor"></p>
+                <p id="precio"></p>
+                <p id="id"></p>
+                <label for="cantidad">Cantidad de vehiculos:</label>
+                <input type="number" id="cantidad" name="cantidad" min="1" required>
+                <button class="btnFiltro" id="agregarCarro">Agregar al carrito</button>
+            </article>
+        </aside>
+    </main>
+    <script src="../js/productos.js"></script>
+</body>
+</html>

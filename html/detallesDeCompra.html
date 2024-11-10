@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/detallesDeCompra.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h1>BIENVENIDO A AMG RENTACAR</h1>
+        <img class="logo" src="../img/logo1.png" alt="imagen logo">
+    </header>
+    <main class="main">
+        <section>
+            <form class="registro">
+                <div>
+                    <label for="nombre">Nombre</label><br>
+                    <input class="input1" type="text" id="nombre" name="nombre" /><br>
+                    <label for="direccion">Direccion</label><br>
+                    <input class="input1" type="text" id="direccion" name="direccion" /><br>
+                </div>
+                <div class="detalles1">
+                    <label  for="presupuestoM"> Presupuesto maximo en pesos</label><br>
+                    <input class="input1" type="number" id="presuMax" name="presupuestoM" /><br>
+                    <label for="cantidadM"> Cantidad maxima</label><br>
+                    <input class="input1" type="number" id="cantidadMax" name="cantidadM" /><br></div>
+                <div class="detalles2">
+                    <label for="domi">Como desea recibir su compra</label>
+                        <div class="contenedor">
+                            <input type="radio" name="domi" value="domicilio">Domicilio
+                            <input type="radio" name="domi" value="tienda">En tienda 
+                        </div> 
+                </div>
+            </form>
+        </section>
+    </main>
+    <nav class="navegador">
+        <a id="iniciarCompra">INICIAR COMPRA</a>
+        <button onclick="limpiarC()">Limpiar campos</button>
+    </nav>
+    <footer class="footer">
+        <p>Creado por: Luis David Angel Rincon</p>
+    </footer>
+    <script src="../js/detallesDeCompra.js"></script>
+</body>
+</html>

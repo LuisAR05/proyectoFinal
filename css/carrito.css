@@ -1,0 +1,165 @@
+body{
+    background-color: #e8e5f6;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #545bb2;
+    border: solid 4px #969afc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+}
+.logo{
+    width: 130px;
+    border-radius: 100px;
+}
+h2{
+    font-family: "Montserrat", serif;
+    color: #969afc;
+    font-weight: 400;
+}
+.principal{
+    background-color: #545bb2;
+    border: solid 4px #969afc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.seleccionados{
+    background-color: #24264f;
+    margin: 10px;
+    width: 860px;
+}
+.pago{
+    background-color: #24264f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.tarjeta{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.numeroT{
+    margin: 10px;
+}
+.fechas{
+    margin: 10px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+.codigo{
+    margin: 10px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.tipoTarj{
+    margin: 10px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.select{
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #e8e5f6;
+    font-family: "Montserrat", serif;
+    border-radius: 3px;
+}
+.nomTitu{
+    margin: 10px;
+}
+.botones{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    width: 320px;
+    margin: 10px;
+}
+h3{
+    font-family: "Montserrat", serif;
+    color: #969afc;
+    font-weight: 500;
+}
+label{
+    font-family: "Montserrat", serif;
+    color: white;
+    width: 600;
+    font-weight: 200;
+}
+.input1{
+    width: 145px;
+    background-color: #e8e5f6;
+    border: 5px groove #969afc;
+}
+.input2{
+    width: 40px;
+    background-color: #e8e5f6;
+    border: 5px groove #969afc;
+}
+.input3{
+    width: 40px;
+    background-color: #e8e5f6;
+    border: 5px groove #969afc;
+}
+.input4{
+    width: 40px;
+    background-color: #e8e5f6;
+    border: 5px groove #969afc;
+}
+.input5{
+    width: 160px;
+    background-color: #e8e5f6;
+    border: 5px groove #969afc;
+}
+.boton1{
+    background-color: #e8e5f6;
+    border: none;
+    border-radius: 3px;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+    padding: 5px;
+    width: 50px;
+}
+.boton2{
+    background-color: #64a377;
+    border: none;
+    border-radius: 3px;
+    font-family: "Montserrat", serif;
+    color: #bcf4cb;
+    font-weight: 500;
+    padding: 10px;
+    width: 150px;
+}
+.boton3{
+    background-color: #c94139;
+    border: none;
+    border-radius: 3px;
+    font-family: "Montserrat", serif;
+    color: #ff9e8e;
+    font-weight: 500;
+    padding: 10px;
+    width: 150px;
+}
+.footer{
+    background-color: #545bb2;
+    margin-top: 20px;
+    padding: 10px;
+    font-family: "Montserrat", serif;
+    color: #969afc;
+    font-weight: 300;
+    display: flex;
+    align-self: stretch;
+}

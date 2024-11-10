@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/carrito.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <h2>CARRITO DE COMPRAS</h2>
+        <img class="logo" src="../img/logo1.png" alt="imagen logo">
+    </header>
+    <main class="principal">
+        <section class="seleccionados">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vehiculo</th>
+                        <th>Nombre</th>
+                        <th>Disponibilidad</th>
+                        <th>Gama</th>
+                        <th>Capacidad</th>
+                        <th>Motor</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="checkbox" id="checkboxD">
+                                Domicilio $20.000
+                            </label>
+                        </td>
+                        <td>
+                            Total
+                        </td>
+                        <td id="totalCosto">$0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <aside class="pago">
+            <div><h3>INDICACIONES</h3></div>
+            <div class="tarjeta">
+                <div class="numeroT">
+                    <label for="numTarjeta">Numero de tarjeta</label>
+                    <input class="input1" id="numTarjeta" type="number" name="numTarjeta" required>
+                </div>
+                <div class="fechas">
+                    <label for="fechaExp">Fecha de Expiracion</label>
+                    <input type="text" id="fechaExp" name="fechaExp" pattern="\d{2}/\d{2}" title="Formato MM/AA" required>
+                </div>
+                <div class="codigo">
+                    <div>
+                    <label for="codigo">Codigo</label>
+                        <input class="input4" id="codigo" type="password" name="codigo" pattern="\d{3}" maxlength="3"  required>
+                    </div>
+                    <button type="button" class="boton1" onclick="visibilidad()">Ver</button>
+                </div>
+                <div class="tipoTarj">
+                    <label for="tipoT">Tipo de tarjeta</label>
+                    <select class="select" name="tipoT" id="tipoT">
+                        <option>MasterCard</option>
+                        <option>Visa</option>
+                        <option>Prepagada</option>
+                    </select>
+                </div>
+                <div class="nomTitu">
+                    <label for="nombreT">Nombre del titular</label>
+                    <input class="input5" id="nombreTitu" type="text" name="nombreT" /><br>
+                </div>
+                <div class="botones">
+                    <button class="boton2" id="confirmarCompra">Confirmar Compra</button>
+                    <button class="boton3" onclick="limpiarCampos()">Limpiar Campos</button>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <footer class="footer">
+        <p>Creado por: Luis David Angel Rincon</p>
+        <a href="../html/productos.html">volver</a>
+    </footer>
+    <script src="../js/carrito.js"></script>
+</body>
+</html>
