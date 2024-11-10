@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 return;
                 }
                 if (totalAll > presupuMax) {
-                reject("La compra supera el presupuesto máximo dado al inicio");
+                    reject("La compra supera el presupuesto máximo dado al inicio");
                 return;
                 }
                 resolve("Pago exitoso");
@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch((mensajee) => {
             alert(mensajee);
-            btnComprar.disable = false;
+            btnComprar.disabled = false;
         });
     });
 
