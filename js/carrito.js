@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         tbody.innerHTML = '';
         total = 0;
 
-        carrito.forEach(vehiculo, index => {
+        carrito.forEach((vehiculo, index) => {
             const row = document.createElement('tr');
             const subtotal = vehiculo.precio * vehiculo.cantidad;
             total += subtotal;
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function actualizarTotal(){
         const totalF = checkD.checked ? total + domicilio : total;
-        totalCosto.textContent = `$${totalF.toLocaleString('es-CO')}`;
+        totalCosto.textContent = totalF.toLocaleString('es-CO');
     }
 
     checkD.addEventListener("change", actualizarTotal);
@@ -115,15 +115,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 if(!cantiT > 20){
-                    reject("La cantidad de vehiculos no puede superar 20");
-                    return;
+                    reject("La cantidad de vehículos no puede superar 20");
+                return;
                 }
-
-                if(!totalAll > presupuMax){
-                    reject("La compra supera el presupuesto max dado al inicio");
-                    return;
+                if (totalAll > presupuMax) {
+                reject("La compra supera el presupuesto máximo dado al inicio");
+                return;
                 }
-
                 resolve("Pago exitoso");
             }, tiempo);
         });
@@ -164,7 +162,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function visibilidad() {
-        const codigoInput = document.getElementById("codigo-seguridad");
+        const codigoInput = document.getElementById("codigo");
         if (codigoInput.type === "password") {
             codigoInput.type= "text";
         } else {
